@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eroizu</title>
+    <link rel="icon" type="image/x-icon" href="img/Logo.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(245, 245, 245);
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 20px;
+            background-color: rgb(236, 236, 236);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .heading-container {
+            display: flex;
+            align-items: center;
+        }
+        .heading-container img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .heading {
+            text-decoration: none;
+            font-size: 34px;
+            color: black;
+            font-family: 'Poppins', sans-serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            letter-spacing: 2px;
+        }
+        .heading:hover {
+            color: rgb(81, 81, 81);
+            text-decoration: underline;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 24px;
+        }
+        nav a:hover {
+            color: rgb(81, 81, 81);
+            text-decoration: underline;
+        }
+        .swiper-container {
+            width: 100%;
+            padding: 20px;
+            touch-action: none; /* Prevent page scrolling on touch */
+        }
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .swiper-slide img {
+            max-width: 100%;
+            height: auto;
+        }
+        .price {
+            font-size: 18px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .description {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 18px;
+    color: #333;
+    padding: 0 20px;
+    line-height: 1.6; /* Adjust line height for better readability */
+}
+
+/* Style the footer */
+footer {
+    background-color: rgb(236, 236, 236);
+    padding: 50px 10px;
+    color: #333;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-nav {
+    margin-bottom: 10px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: rgb(81, 81, 81);
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.footer-social a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: rgb(81, 81, 81);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="heading-container">
+            <img src="img/Logo.jpeg" alt="Logo">
+            <h1 class="heading">Eroizu</h1>
+        </div>
+        <nav>
+            <a href="#" style="text-decoration: line-through;">Home</a>
+            <a href="product.html">Product</a>
+            <a href="cart.html"><i class="fas fa-shopping-cart" style="margin-right:10px ;"></i></a>
+            <a href="about.html">About us</a>
+        </nav>
+    </header>
+
+    <!-- Swiper Slider -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/1.jpeg" alt="Image 1">
+                <div class="price">$19.99</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/2.jpeg" alt="Image 2">
+                <div class="price">$24.99</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/3.jpeg" alt="Image 3">
+                <div class="price">$29.99</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/4.jpeg" alt="Image 4">
+                <div class="price">$34.99</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/5.jpeg" alt="Image 5">
+                <div class="price">$39.99</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/6.jpeg" alt="Image 6">
+                <div class="price">$44.99</div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <div class="description">
+        Eroizu is your one-stop destination for trendy and affordable fashion essentials. Catering to the modern lifestyle, Eroizu offers a wide range of products that blend comfort, style, and quality. From chic clothing to accessories that add flair to your everyday look, Eroizu ensures that you stay fashion-forward without breaking the bank. Whether you're searching for the perfect outfit for a casual day out or upgrading your wardrobe with the latest trends, Eroizu has something for everyone. With a focus on customer satisfaction and accessibility, Eroizu strives to make fashion fun, accessible, and inclusive for all. Shop now and unleash your unique style with Eroizu!
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-nav">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="footer-info">
+                <p>Contact us: minecraftfarooki@gmail.com</p>
+                <p>Chapal Up Town, Karachi, Pakistan</p>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 20,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            simulateTouch: true,
+            touchStartPreventDefault: false, // This prevents the page from scrolling
+            passiveListeners: false // This prevents the default touch action
+        });
+
+        // Prevent horizontal scrolling of the page
+        document.querySelector('.swiper-container').addEventListener('touchstart', function(e) {
+            e.stopPropagation();
+        }, { passive: false });
+    </script>
+</body>
+</html>
